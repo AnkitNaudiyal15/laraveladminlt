@@ -1,0 +1,22 @@
+<p>share works!</p>
+<div style="padding: 13px;">
+    <mat-spinner *ngIf="shares.length === 0"></mat-spinner>
+
+    <mat-card *ngFor="let share of shares,data" style="margin-top:10px;">
+        <mat-card-header>
+            <br>
+            <mat-card-title>{{share.id}} - </mat-card-title>
+            <mat-card-subtitle>{{share.first_name}} {{share.last_name}}
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                <!-- {{product.description}} -->
+            </p>
+            <img style="height:100px; width: 100px;" src="{{ share.avatar }}" />
+        </mat-card-content>
+        <mat-card-actions>
+      <!-- <button mat-button> Buy product</button> -->
+    </mat-card-actions>
+    </mat-card>
+</div>
