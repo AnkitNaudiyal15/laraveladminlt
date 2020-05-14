@@ -7,12 +7,14 @@ import { ShareComponent } from './share/share.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ShareeditComponent } from './shareedit/shareedit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShareComponent,
-    AboutusComponent
+    AboutusComponent,
+    ShareeditComponent
   ],
   imports: [
     BrowserModule,
