@@ -8,20 +8,30 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ShareeditComponent } from './shareedit/shareedit.component';
+import { HomeComponent } from './crud/home/home.component';
+import { DetailsComponent } from './crud/details/details.component';
+import { CreateComponent } from './crud/create/create.component';
+import { UpdateComponent } from './crud/update/update.component';
+import { CrudModule } from './crud/crud.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShareComponent,
     AboutusComponent,
-    ShareeditComponent
+    ShareeditComponent,
+    HomeComponent,
+    DetailsComponent,
+    CreateComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CrudModule
   ],
   providers: [],
   bootstrap: [AppComponent]

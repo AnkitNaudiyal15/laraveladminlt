@@ -15,7 +15,7 @@ export class ShareComponent implements OnInit {
   ngOnInit(){
     this.apiServices.getShare().subscribe((data: any[])=>{
       console.log(data);
-      this.shares = data.data;
+      this.shares = data;
      })
   }
 }

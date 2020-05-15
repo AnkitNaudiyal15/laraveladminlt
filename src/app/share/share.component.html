@@ -2,7 +2,7 @@
 <div style="padding: 13px;">
     <mat-spinner *ngIf="shares.length === 0"></mat-spinner>
 
-    <mat-card *ngFor="let share of shares,data" style="margin-top:10px;">
+    <mat-card *ngFor="let share of shares.data" style="margin-top:10px;">
         <mat-card-header>
             <br>
             <mat-card-title>{{share.id}} - </mat-card-title>
